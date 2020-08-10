@@ -15,7 +15,7 @@
   let flagSol = 0;
   let precioMasBaratoSolido;
   let marcaMasCaroLiq;
-  let marcaBaratoSol;
+  let marcaSolidoBarata;
 
   do {
 
@@ -53,7 +53,7 @@
     if (tipo == "líquido") {
 
       if (flagLiq == 0) {
-        marcaLiqCaro = marca;
+        marcaMasCaroLiq = marca;
         precioMarcaLiqCara = precio;
         flagLiq = 1;
 
@@ -71,7 +71,7 @@
 
         } else if (precioMasBaratoSolido < precio) {
           precioMasBaratoSolido = precio;
-          marcaBaratoSol=marca;
+          marcaSolidoBarata=marca;
         }
 
       }
@@ -86,5 +86,5 @@
 
   document.write(" El peso total de la compra es de " + acumuladorpeso + "<br/>");
   document.write("La marca del más caro de los líquidos es " + marcaMasCaroLiq + "<br/>");
-  document.write("la marca del más barato de los sólidos " + marcaBaratoSol + "<br/>");
+  document.write("la marca del más barato de los sólidos " + marcaSolidoBarata + "<br/>");
 }
